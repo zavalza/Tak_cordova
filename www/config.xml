@@ -64,6 +64,10 @@
     <!-- 
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+    <param name="APP_ID" value="161471184060754" />
+    <param name="APP_NAME" value="Tak" />
+    </gap:plugin>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
