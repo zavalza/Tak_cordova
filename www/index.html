@@ -34,12 +34,139 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div class="panels ">
+          <div class="panel panel-left">
+          </div>
+        </div>
+
+        <div class="panel-content">
+          <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner docs-navbar-inner">
+              <div class="container">
+                <a href="#menu" class="menu-trigger meteocon" data-meteocon="M" data-toggle="panel" data-target="#menu"></a>
+                <div class="nav-collapse collapse">
+                  <nav id="menu">
+                    <ul class="nav docs-navbar-menu">
+                      <li><a class="brand" href="index.html">Tak</a></li>
+                      <!-- <li class="active"><a href="#empezar">Registro</a></li> -->
+                      <li class=""><a href="#descargar">Descarga</a></li>
+                      <li class=""><a href="#">Contacto</a></li>  
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="row">
+            <div class="section-jumbo-container" id="descargar">
+              <h1 class="jumbo-header">Tak</h1> 
+              <h2 class="motto"><b>Ofrece lo que haces a toda tu comunidad</b></h2>
+              <img src="http://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg" alt="" class="button" />
+              <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Available_on_the_App_Store_(black)_SVG.svg/200px-Available_on_the_App_Store_(black)_SVG.svg.png" alt="" class="button" />
+              <br>
+              <br>
+              <!-- <div>
+                <iframe width="380" height="280" src="https://www.youtube.com/embed/wrcSutoSe3U?html5=1" frameborder="0"></iframe>
+              </div> -->
+            </div>
+            <div class="container-center">
+              <div class="features">
+                <div class="row">
+                   <div class="col-6">
+                    <h1 class="muted">Conecta</h1>  
+                    <p class="feature-description">Conecta con personas que antes no conocías. Tak amplia tu círculo de contactos.</p>
+                   </div>
+                   <div class="col-6">
+                     <img src="http://placehold.it/200x200" alt="" class="img img-well"/>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-6">
+                     <img src="http://placehold.it/200x200" alt="" class="img img-well"/>
+                   </div>
+                   <div class="col-6">
+                    <h1 class="muted">Encuentra</h1>  
+                    <p class="feature-description">Encuentra a quien necesitas. Tak te permite explorar las habilidades que te rodean.</p>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-6">
+                    <h1 class="muted">Gana</h1>  
+                    <p class="feature-description">Gana dinero y/o experiencia por hacer lo que siempre haces.</p>
+                   </div>
+                   <div class="col-6">
+                     <img src="http://placehold.it/200x200" alt="" class="img img-well"/>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+              <hr />
+              <a href="#descargar" align="center" class="btn btn-info">Comienza ahora</a> 
+              <!-- <div class="container-center">
+                <div class="col-9">
+                  <div class="row" align="left">
+                    <div id="empezar">
+                      <h2 class="header">Registro</h2>
+                      <h4 class="light">Bienvenido a Tak, te pediremos algunos datos para que tu comunidad los conozca</h4>
+                      <form name="Registro" id="formaDeRegistro">
+                      <div class="form-fields">
+                        <label for="">Nombre</label>
+                        <input class="input-small" type="text" name="firstName" id="firstName"><br>
+                      </div>
+                      <div class="form-fields">
+                        <label for="">Apellido (Opcional)</label>
+                        <input class="input-small" type="text" name="lastName" id="lastName"><br>
+                      </div>
+                      <div class="form-fields">
+                        <label for="email">Correo Electrónico</label>
+                        <input class="input-small" type="text" name="email" id="email"><br>
+                      </div>
+                      <div class="form-fields">
+                        <label for="email">Confirmar Correo Electrónico</label>
+                        <input class="input-small" type="text" name="emailAgain" id="emailAgain"><br>
+                      </div>
+                      <div class="form-fields">
+                          <label for="">Celular (Opcional)</label>
+                          <input class="input-small" type="number" name="mobile" id="mobile"><br>
+                      </div>
+                      <div class="form-fields">
+                        <label for="">Las habilidades que podrías ofrecer a los demás</label>
+                        <input class="input-small" placeholder="¿Qué sabes hacer? Ejemplo: "type="text"><br>
+                        <input class="input-small" placeholder="¿Qué sabes hacer?" type="text"><br>
+                        <input class="input-small" placeholder="¿Qué sabes hacer?" type="text"><br>
+                        <a href="javascript:void()" class="btn btn-info">Añadir más</a> 
+                      </div>
+                      <div class="form-fields">
+                        <label for="select">Área donde puedes ofrecer estas habilidades </label>
+                        <select>
+                          <option>Elige el punto donde te sería más cómodo</option>
+                          <option>EMIS</option>
+                          <option>Tenológico de Monterrey Campus Monterrey</option>
+                          <option>UANL Campus Mederos</option>
+                        </select>
+                        <a href="javascript:initializeMap()" class="btn btn-info">Ver mapa</a>
+                      </div>
+                        <div id="map-canvas" style="width: 400px; height: 350px; display: none;"></div>
+                      <a href="javascript:saveInParse()" class="btn btn-info">Listo</a> 
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                      <img src="http://placehold.it/250x350" alt="" class="img" />
+                    </div>
+                </div>      
+            </div> -->
+            <div class="row footer">
+                    <p class="copyright">Copyright <a href="#" class="docs-license">Tak Labs</a></p>
+                    <ul class="inline">
+                      
+                    </ul>
+            </div>
+          </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
